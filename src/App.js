@@ -5,7 +5,7 @@ function App() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch("http://alb-ayushi-ft-948107060.us-east-1.elb.amazonaws.com/api/users")
+    fetch("http://10.1.1.20/api/users")
       .then((response) => response.json())
       .then((data) => setUsers(data))
       .catch((error) => console.error("Error fetching users:", error));
